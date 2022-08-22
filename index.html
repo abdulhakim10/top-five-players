@@ -41,7 +41,7 @@
             <div class="flex justify-between">
                 <div class="w-1/4"><img class="mt-8" src="images/banner/image 27banner-pic.png" alt=""></div>
                 <div class="text-center mt-48 w-2/4">
-                    <h1 class="text-6xl font-semibold text-amber-500 font">Choose Top Five Players!!!</h1>
+                    <h1 class="text-6xl font-medium text-amber-500 font">Choose Top Five Players!!!</h1>
                     <p class="text-white mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime omnis
                         magni rerum natus velit
                         debitis accusantium, inventore dolore asperiores, officiis corrupti, aperiam nostrum tempora vel
@@ -68,7 +68,7 @@
             <div class="flex justify-evenly">
                 <!-- players details -->
                 <div class="grid grid-cols-3 gap-5">
-                    <div class="bg-black text-white border-slate-500 mx-auto text-center">
+                    <div class="bg-black text-white mx-auto text-center">
                         <img src="images/players/Rectangle 144messi.png" alt="">
                         <h3 id="name-messi" class="text-3xl font-semibold mt-3">Lionel Messi</h3>
                         <p class="py-3 text-slate-500 text-lg">36 Goals . 120 Assist</p>
@@ -104,8 +104,8 @@
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium mb-4 hover:bg-blue-600 ">Select</button>
                     </div>
                     <div class="bg-black text-white border-slate-500 mx-auto text-center">
-                        <img src="images/players/Rectangle 144ramos .png" alt="">
-                        <h3 id="name-dmaria" class="text-3xl font-semibold mt-3">Angel De Maria</h3>
+                        <img src="images/players/Angel-di-Maria.jpg" alt="">
+                        <h3 id="name-dmaria" class="text-3xl font-semibold mt-3 ">Angel De Maria</h3>
                         <p class="py-3 text-slate-500 text-lg">36 Goals . 120 Assist</p>
                         <button id="btn-dmaria"
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium mb-4 hover:bg-blue-600 ">Select</button>
@@ -118,17 +118,17 @@
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium mb-4 hover:bg-blue-600 ">Select</button>
                     </div>
                     <div class="bg-black text-white border-slate-500 mx-auto text-center">
-                        <img src="images/players/Rectangle 144ramos .png" alt="">
-                        <h3 id="name-marcelo" class="text-3xl font-semibold mt-3">Marcelo</h3>
+                        <img src="images/players/Gianluigi Donnarumma (1).jpg" alt="">
+                        <h3 id="name-gianluigi" class="text-3xl font-semibold mt-3">Gianluigi</h3>
                         <p class="py-3 text-slate-500 text-lg">36 Goals . 120 Assist</p>
-                        <button id="btn-marcelo"
+                        <button id="btn-gianluigi"
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium mb-4 hover:bg-blue-600 ">Select</button>
                     </div>
                     <div class="bg-black text-white border-slate-500 mx-auto text-center">
-                        <img src="images/players/Rectangle 144messi.png" alt="">
-                        <h3 id="name-cr7" class="text-3xl font-semibold mt-3">Crischiano Ronaldo</h3>
+                        <img src="images/players/hakimi (1).jpg" alt="">
+                        <h3 id="name-hakimi" class="text-3xl font-semibold mt-3">Achraf Hakimi</h3>
                         <p class="py-3 text-slate-500 text-lg">36 Goals . 120 Assist</p>
-                        <button id="btn-cr7"
+                        <button id="btn-hakimi"
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium mb-4 hover:bg-blue-600 ">Select</button>
                     </div>
 
@@ -139,7 +139,7 @@
                     <!-- selected -->
                     <div class="bg-black text-white text-center mb-4 mx-8 p-24">
                         <h3 class="text-4xl font-semibold mb-8">Selected-V</h3>
-                        <ol id="selected-container" class="text-xl">
+                        <ol id="selected-container" class="text-2xl text-left">
 
                         </ol>
                     </div>
@@ -158,17 +158,18 @@
                         </div>
                         <div class="flex justify-between mb-4">
                             <p class="text-lg">Manager</p>
-                            <input class="border bg-black p-2 hover:bg-slate-700" type="text">
+                            <input id="mng-input-field" class="border bg-black p-2 hover:bg-slate-700" type="text">
                         </div>
                         <div class="flex justify-between mb-8">
                             <p class="text-lg">Coach</p>
-                            <input class="border bg-black p-2 hover:bg-slate-700" type="text">
+                            <input id="coach-input-field" class="border bg-black p-2 hover:bg-slate-700" type="text">
                         </div>
-                        <button class="bg-blue-900 px-20 py-2 text-2xl font-medium my-4 hover:bg-blue-600 ">Current
+                        <button id="btn-total-calculate"
+                            class="bg-blue-900 px-20 py-2 text-2xl font-medium my-4 hover:bg-blue-600 ">Calculate
                             Total</button>
                         <div class="flex justify-between mb-4 text-lg">
                             <p>Total</p>
-                            <p>$00</p>
+                            <p>$<span id="total">00</span></p>
                         </div>
                     </div>
                 </div>

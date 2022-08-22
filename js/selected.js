@@ -68,17 +68,17 @@ document.getElementById('btn-vitor').addEventListener('click', function () {
     DisableNextButton('btn-vitor');
 
 })
-document.getElementById('btn-marcelo').addEventListener('click', function () {
+document.getElementById('btn-gianluigi').addEventListener('click', function () {
 
-    const name = playersName('name-marcelo');
+    const name = playersName('name-gianluigi');
     selectedList(name);
-    DisableNextButton('btn-marcelo');
+    DisableNextButton('btn-gianluigi');
 
 })
-document.getElementById('btn-cr7').addEventListener('click', function () {
+document.getElementById('btn-hakimi').addEventListener('click', function () {
 
-    const name = playersName('name-cr7');
+    const name = playersName('name-hakimi');
     selectedList(name);
-    DisableNextButton('btn-cr7');
+    DisableNextButton('btn-hakimi');
 
 })
