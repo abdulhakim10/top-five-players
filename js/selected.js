@@ -8,9 +8,14 @@ function selectedList(name) {
     const selectedContainer = document.getElementById('selected-container');
     const li = document.createElement('li');
     li.innerText = name;
+    if (selectedContainer.childElementCount > 4) {
+        alert('you already selected five players');
+        return name;
+    }
     selectedContainer.appendChild(li);
-    return name;
+
 }
+
 
 function DisableNextButton(btnId) {
     document.getElementById(btnId).disabled = 'true';
