@@ -138,37 +138,37 @@
                 <div>
                     <!-- selected -->
                     <div class="bg-black text-white text-center mb-4 mx-8 p-24">
-                        <h3 class="text-3xl font-semibold mb-8">Selected-V</h3>
-                        <ol id="selected-container" class="text-lg">
+                        <h3 class="text-4xl font-semibold mb-8">Selected-V</h3>
+                        <ol id="selected-container" class="text-xl">
 
                         </ol>
                     </div>
                     <!-- budget -->
                     <div class="bg-black text-white text-center mx-8 p-24">
-                        <h3 class=" text-3xl font-semibold mb-8">Budget</h3>
-                        <div class="flex justify-between">
-                            <p>Per Player</p>
-                            <input class="border bg-black py-2" type="text">
+                        <h3 class=" text-4xl font-semibold mb-12">Budget</h3>
+                        <div class="flex justify-between mb-4">
+                            <p class="text-lg">Per Player</p>
+                            <input id="pp-input-field" class="border bg-black p-2 hover:bg-slate-700" type="text">
                         </div>
-                        <button
+                        <button id="btn-calculate"
                             class="bg-blue-900 px-20 py-2 text-2xl font-medium my-4 hover:bg-blue-600 ">Calculate</button>
-                        <div class="flex justify-evenly mb-4">
+                        <div class="flex justify-evenly mb-8 text-lg">
                             <p>Player Expenses</p>
-                            <p>$5000</p>
+                            <p>$<span id="expence">00</span></p>
                         </div>
                         <div class="flex justify-between mb-4">
-                            <p>Manager</p>
-                            <input class="border bg-black py-2" type="text">
+                            <p class="text-lg">Manager</p>
+                            <input class="border bg-black p-2 hover:bg-slate-700" type="text">
                         </div>
-                        <div class="flex justify-between mb-4">
-                            <p>Coach</p>
-                            <input class="border bg-black py-2" type="text">
+                        <div class="flex justify-between mb-8">
+                            <p class="text-lg">Coach</p>
+                            <input class="border bg-black p-2 hover:bg-slate-700" type="text">
                         </div>
                         <button class="bg-blue-900 px-20 py-2 text-2xl font-medium my-4 hover:bg-blue-600 ">Current
                             Total</button>
-                        <div class="flex justify-between mb-4">
+                        <div class="flex justify-between mb-4 text-lg">
                             <p>Total</p>
-                            <p>$11000</p>
+                            <p>$00</p>
                         </div>
                     </div>
                 </div>
@@ -188,6 +188,7 @@
 
     <!-- js script file -->
     <script src="js/selected.js"></script>
+    <script src="js/budget.js"></script>
 </body>
 
 </html>
