@@ -11,7 +11,9 @@ function inputField(idName) {
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
 
-    const playerExpence = inputField('pp-input-field') * 5;
+    const selectedContainer = document.getElementById('selected-container')
+    const selectedName = selectedContainer.childElementCount;
+    const playerExpence = inputField('pp-input-field') * selectedName;
 
 
     const playerExpenceField = document.getElementById('expence');
