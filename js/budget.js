@@ -43,6 +43,6 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
 
 
     // totat expence
-    const totalExpence = playerExpence + managerExpence + coachExpence + total;
+    const totalExpence = playerExpence + managerExpence + coachExpence;
     totalField.innerText = totalExpence;
 })
