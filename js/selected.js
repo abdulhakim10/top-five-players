@@ -9,7 +9,7 @@ function selectedList(name) {
     const li = document.createElement('li');
     li.innerText = name;
     if (selectedContainer.childElementCount > 4) {
-        alert('you already selected five players');
+        alert('you can not selecte more than five players');
         return name;
     }
     selectedContainer.appendChild(li);

@@ -37,10 +37,6 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
 
     // total
     const totalField = document.getElementById('total');
-    const totalString = totalField.innerText;
-    const total = parseFloat(totalString);
-    totalField.innerText = total;
-
 
     // totat expence
     const totalExpence = playerExpence + managerExpence + coachExpence;
