@@ -17,9 +17,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
 
 
     const playerExpenceField = document.getElementById('expence');
-    const playerExpenceString = playerExpenceField.innerText;
-    const totalPlayerExpence = parseFloat(playerExpenceString) + playerExpence;
-    playerExpenceField.innerText = totalPlayerExpence;
+    playerExpenceField.innerText = playerExpence;
 
 })
 
